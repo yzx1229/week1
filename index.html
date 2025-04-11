@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <!-- 新增選單 -->
+    <ul class="menu">
+      <li onclick="hideIframe()">首頁</li>
+      <li onclick="hideIframe()">自我介紹</li>
+      <li class="dropdown">
+        作品集
+        <ul class="submenu">
+          <li><a href="https://www.tku.edu.tw/" target="iframe-display" onclick="showIframe()">第一周</a></li>
+          <li><a href="https://www.et.tku.edu.tw/" target="iframe-display" onclick="showIframe()">第二周</a></li>
+          <li><a href="https://hackmd.io/@cfchen/BJD2JvYl0" target="iframe-display" onclick="showIframe()">第三周</a></li>
+          <li><a href="#" target="iframe-display" onclick="showIframe()">第四周</a></li>
+        </ul>
+      </li>
+      <li onclick="hideIframe()">測驗卷</li>
+      <li onclick="hideIframe()">教學影片</li>
+    </ul>
+
+    <!-- 嵌入 iframe -->
+    <iframe name="iframe-display" class="iframe-display hidden"></iframe>
+
+    <script src="sketch.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
