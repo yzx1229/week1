@@ -79,8 +79,3 @@ canvas {
   z-index: 2; /* 第二層 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加陰影效果 */
 }
-
-/* 隱藏 iframe */
-.hidden {
-  display: none;
-}
